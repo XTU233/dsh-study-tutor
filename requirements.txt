@@ -1,0 +1,15 @@
+# Python dependencies for the study-tutor worker scripts.
+#
+# These are NOT committed to the repo (tools/pylib/ is git-ignored: hundreds of
+# MB of wheels with their own licenses). Install them into a directory the
+# plugin can import, then run the plugin with PYTHONPATH pointing at it:
+#
+#   python -m pip install --target tools/pylib -r requirements.txt
+#
+# Verified against Python 3.12.
+pymupdf>=1.24            # PDF text extraction + page rendering
+pymupdf4llm>=0.0.17      # PDF -> structured markdown blocks
+onnxruntime>=1.17        # local sentence-embedding inference (bge-small-zh)
+tokenizers>=0.15         # tokeniser for the embedding model
+pypandoc_binary>=1.13    # bundles pandoc for office/ebook conversion
+numpy>=1.26              # LSA fallback embedder
