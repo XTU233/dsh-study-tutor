@@ -1,0 +1,9 @@
+# Registers the study tutor. The config below is merged over the plugin's
+# defaults; every field is optional.
+- insert:
+    - id: study-tutor
+      name: '@local/dsh-study-tutor'
+      config:
+        autoInstallTools: false
+        asrProvider: sensevoice-local
+        asrLanguage: zh

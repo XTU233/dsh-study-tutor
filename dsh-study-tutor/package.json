@@ -1,0 +1,64 @@
+{
+  "name": "@local/dsh-study-tutor",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Study tutor: ingest hostile teaching materials, probe the student's knowledge boundary over several interview rounds, build a prerequisite knowledge graph and a local vector knowledge base, then teach with visual, monospace-diagram lessons.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XTU233/dsh-study-tutor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XTU233/dsh-study-tutor/issues"
+  },
+  "homepage": "https://github.com/XTU233/dsh-study-tutor#readme",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "study",
+    "tutor",
+    "learning",
+    "knowledge-graph",
+    "rag"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "install.ps1",
+    "requirements.txt",
+    "vendor/*",
+    "scripts/*.py",
+    "tools/model/*",
+    "tools/pandoc/COPYRIGHT.txt",
+    "tools/ffmpeg/SOURCE.txt",
+    "LICENSE",
+    "CHANGELOG.md",
+    ".gitignore"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "license": "MIT"
+}
