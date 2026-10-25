@@ -1,0 +1,26 @@
+# Normalise line endings so a Windows checkout does not corrupt the scripts.
+# Git stores text with LF; Windows checkouts get CRLF only where it matters.
+
+* text=auto eol=lf
+
+# PowerShell scripts must stay CRLF: Windows PowerShell 5.1 mis-parses some
+# multi-line constructs when they arrive with bare LF.
+*.ps1 text eol=crlf
+
+# Keep these byte-for-byte; converting them would break the artifacts.
+*.onnx      binary
+*.onnx_data binary
+*.woff2     binary
+*.png       binary
+*.jpg       binary
+*.zip       binary
+
+# Language stats on GitHub
+*.js    linguist-language=JavaScript
+*.py    linguist-language=Python
+*.ps1   linguist-language=PowerShell
+vendor/* linguist-vendored
+client.js linguist-generated=false
+
+# Diffs
+*.md diff=markdown

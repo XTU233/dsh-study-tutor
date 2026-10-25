@@ -134,3 +134,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Action instal
 
 在 Plugins 页停用，或跑 `.\install.ps1 -Action rollback`；`dataDir` 下的缓存可手动删除。
 
+## 许可证
+
+本插件原创代码以 **MIT** 许可发布，见 [`LICENSE`](LICENSE)。
+随仓库分发的第三方组件（Temml、bge-small-zh 向量模型、ffmpeg 许可证文本）
+各自保留原许可证，完整清单见 [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md)。
+
+`ffmpeg`、`pandoc`、`PyMuPDF` 等体积大或带传染性许可证的二进制**不随仓库分发**，
+由使用者按 [`requirements.txt`](requirements.txt) 在本地安装；缺失时插件优雅降级而非崩溃。

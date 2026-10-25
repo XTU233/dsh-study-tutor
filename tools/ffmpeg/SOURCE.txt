@@ -1,0 +1,10 @@
+ffmpeg / ffprobe
+================
+version : 6.1.1-essentials_build (www.gyan.dev), GPL build
+source  : https://registry.npmmirror.com/-/binary/ffmpeg-static/b6.1.1/ffmpeg-win32-x64
+          https://registry.npmmirror.com/-/binary/ffmpeg-static/b6.1.1/ffprobe-win32-x64
+fetched : 2026-10-24 00:04:45
+size    : ffmpeg.exe 82797568 B / ffprobe.exe 82668032 B
+note    : GPL binary used locally by the dsh-study-tutor plugin for frame
+          extraction and audio transcoding only. Not redistributed.
+license : see LICENSE (win32-x64.LICENSE from the same package)

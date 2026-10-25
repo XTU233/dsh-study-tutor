@@ -19,24 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-## Third-party notices
-
-This repository ships or references the following third-party components.
-They remain under their own licenses; the MIT grant above covers only the
-original source of this plugin.
-
-| Component | License | Where |
-| --- | --- | --- |
-| Temml | MIT | `vendor/` (LaTeX to MathML) |
-| bge-small-zh-v1.5 (quantised ONNX) | MIT | `tools/model/bge-small-zh/` |
-| pandoc (via pypandoc_binary) | GPL-2.0-or-later | installed locally, NOT redistributed here |
-| ffmpeg / ffprobe | GPL-2.0-or-later | installed locally, NOT redistributed here |
-| PyMuPDF | AGPL-3.0 | installed locally, NOT redistributed here |
-| onnxruntime | MIT | installed locally, NOT redistributed here |
-
-`ffmpeg`, `pandoc`, `PyMuPDF` and the other Python wheels are intentionally
-excluded from this repository (see `.gitignore`) because redistributing them
-would attach their license obligations to this package.

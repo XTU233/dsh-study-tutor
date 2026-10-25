@@ -44,6 +44,7 @@
     "tools/pandoc/COPYRIGHT.txt",
     "tools/ffmpeg/SOURCE.txt",
     "LICENSE",
+    "THIRD-PARTY-NOTICES.md",
     "CHANGELOG.md",
     ".gitignore"
   ],

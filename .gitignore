@@ -1,0 +1,43 @@
+# ── Third-party binaries: never committed ───────────────────────────────────
+# ffmpeg/ffprobe are a GPL build fetched for local use only. Redistributing the
+# executables would attach a GPL obligation to this whole repository, so only
+# the provenance/license notes are tracked.
+tools/ffmpeg/*
+!tools/ffmpeg/SOURCE.txt
+!tools/ffmpeg/LICENSE
+!tools/ffmpeg/README.txt
+
+# Bundled Python wheels unpacked for offline use: large, and each has its own
+# license/attribution requirements. Install them with
+# `pip install -r requirements.txt` instead of committing the trees.
+tools/pylib/
+
+# Pandoc is fetched by pypandoc_binary; only the notice file is tracked.
+tools/pandoc/*
+!tools/pandoc/COPYRIGHT.txt
+
+# ── Local state / build output ─────────────────────────────────────────────
+node_modules/
+dist/
+out/
+*.log
+*.tmp
+*.bak
+*.orig
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Release archives are produced by the packaging step, never committed.
+*.zip
+
+# Editor / OS noise
+.idea/
+.vscode/
+*.code-workspace

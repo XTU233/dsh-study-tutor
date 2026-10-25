@@ -1,4 +1,4 @@
-# 学习教练插件 · 安装 / 停用 / 回滚
+﻿# 学习教练插件 · 安装 / 停用 / 回滚
 #
 # 用法（在**已完全退出** DSH 桌面端的 PowerShell 里跑）：
 #   powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Action status
